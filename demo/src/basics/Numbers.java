@@ -3,9 +3,13 @@ package basics;
 public class Numbers {
 
 	public static void main(String[] args) {
-		int i;
+		var a = 10;
+		var b = "abc";
+		
+		 System.out.println(b);
+		
 
-		for (i = 1; i <= 10; i++)
+		for (var i = 1; i <= 10; i++)
 			System.out.println(i);
 
 	}
