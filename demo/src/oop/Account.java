@@ -11,9 +11,20 @@ public class Account {
 		acno = no;
 		ahname = name;
 	}
+
+	public Account(int no, String name, double bal) {
+		acno = no;
+		ahname = name;
+		balance = bal;
+	}
+	
 	// Methods
 	public void deposit(double amount) {
 		balance += amount;
+	}
+
+	public void withdraw(double amount) {
+		balance -= amount;
 	}
 
 	public double getBalance() {
