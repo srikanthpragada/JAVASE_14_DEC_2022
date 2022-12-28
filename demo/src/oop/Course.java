@@ -5,11 +5,15 @@ public class Course {
 	private int duration, fee;
 	private String remarks;
 
-	public Course(String n, int d, int f, String r) {
-		name = n;
-		duration = d;
-		fee = f;
-		remarks = r;
+	public Course(String name, int duration, int fee, String remarks) {
+		this(name,duration,fee);
+		this.remarks = remarks;
+	}
+
+	public Course(String name, int duration, int fee) {
+		this.name = name;
+		this.duration = duration;
+		this.fee = fee;
 	}
 
 	public void print() {
@@ -18,8 +22,8 @@ public class Course {
 		System.out.println(fee);
 		System.out.println(remarks);
 	}
-	
+
 	public int getNetFee() {
-		return fee + fee * 18 / 100; 
+		return fee + fee * 18 / 100;
 	}
 }
