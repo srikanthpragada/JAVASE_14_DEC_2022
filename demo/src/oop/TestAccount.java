@@ -10,10 +10,14 @@ public class TestAccount {
 		a.deposit(15000);
 		a.withdraw(5000);
 		System.out.println(a.getBalance());
+		 
 
 		Account a2 = new Account(200, "Larry", 50000);
 		a2.deposit(10000);
 		System.out.println(a2.getBalance());
+		
+		System.out.println(Account.getMinbal());
+		
 		
 		 
 	}

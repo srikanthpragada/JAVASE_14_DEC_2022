@@ -5,6 +5,13 @@ public class Account {
 	private int acno;
 	private String ahname;
 	private double balance;
+	
+	// static or class variable
+	private static int minbal = 5000;
+
+	public static int getMinbal() {
+		return minbal;
+	}
 
 	// Constructor
 	public Account(int acno, String ahname) {
@@ -13,17 +20,18 @@ public class Account {
 	}
 
 	public Account(int acno, String ahname, double balance) {
-		this(acno,ahname); // call another constructor 
+		this(acno, ahname); // call another constructor
 		this.balance = balance;
 	}
-	
+
 	// Methods
 	public void deposit(double amount) {
 		this.balance += amount;
 	}
 
 	public void withdraw(double amount) {
-		this.balance -= amount;
+		if (this.balance - amount >= Account.minbal)
+			this.balance -= amount;
 	}
 
 	public double getBalance() {
