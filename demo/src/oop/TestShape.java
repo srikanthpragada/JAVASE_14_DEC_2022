@@ -43,8 +43,11 @@ public class TestShape {
 		if(s instanceof Square) {
 		   Square sq = (Square) s;  // downcasting
 		}
-		
-		
+
+		 
+		if (s instanceof Square sq) {
+			
+		}
 
 	}
 
