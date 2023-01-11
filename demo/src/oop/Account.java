@@ -1,6 +1,6 @@
 package oop;
 
-public class Account {
+public class Account implements Comparable<Account> {
 	// instance variables
 	private int acno;
 	private String ahname;
@@ -36,6 +36,16 @@ public class Account {
 
 	public double getBalance() {
 		return this.balance;
+	}
 
+	@Override
+	public int compareTo(Account other) {
+	  // return (int) (this.balance - other.balance);
+	  return  this.acno - other.acno;
+	}
+	
+	@Override 
+	public String toString() {
+		return this.acno + " - " + this.ahname + " - " + this.balance;
 	}
 }
