@@ -1,5 +1,10 @@
 package oop;
 
+// package access 
+class Deposit {
+	
+}
+
 public class Account implements Comparable<Account> {
 	// instance variables
 	private int acno;
