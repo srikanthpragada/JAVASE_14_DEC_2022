@@ -17,6 +17,8 @@ public class ExDemo {
 		} catch (ArrayIndexOutOfBoundsException ex) {
 			System.out.println("Sorry! Invalid id. It must be 0 to 4");
 		}
+		
+		System.out.println("The End");
 	}
 
 }
