@@ -14,7 +14,7 @@ public class ChildThreadDemo2 {
 	public static void main(String[] args) throws InterruptedException {
         System.out.println("In Main Thread!");
         Thread ct = new Thread(new Task());
-        // ct.setDaemon(true);
+        ct.setDaemon(true);
         ct.start();  // calls run() in Task object 
         
         for (int i = 1; i <= 25; i++)
