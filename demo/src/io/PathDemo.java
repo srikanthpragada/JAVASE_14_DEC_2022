@@ -10,8 +10,5 @@ public class PathDemo {
 		 
 		 System.out.println(p.getClass());
 		 System.out.println(Files.isDirectory(p));
-		 
-
 	}
-
 }
