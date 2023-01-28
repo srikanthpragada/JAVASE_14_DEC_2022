@@ -12,6 +12,8 @@ public class SortNames {
 		 names.add("Larry");
 		 names.add("Bill");
 		 
+		 names.set(0,"Steve");
+		 
 		 names.sort(null);
 		 
 		 for(var n : names)
